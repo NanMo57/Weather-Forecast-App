@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap-grid.min.css" integrity="sha512-Aa+z1qgIG+Hv4H2W3EMl3btnnwTQRA47ZiSecYSkWavHUkBF2aPOIIvlvjLCsjapW1IfsGrEO3FU693ReouVTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="https://img.freepik.com/premium-photo/clear-blue-sky-background-with-clouds_887552-22530.jpg" alt="" id="background_body"/>
+    <section class="weatherBlock w-100 h-100 position-relative">
+        <div class="container card shadow m-0">
+            <form>
+                <label class="d-flex justify-content-center align-items-center rounded-pill mx-auto shadow border border-2">
+                    <input type="text" placeholder="Search City" class="border border-0 bg-transparent"/>
+                    <i type="Search" class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </form>
+            <div id="Weather_Details">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div><i class="fa-solid fa-location-dot me-2" style="color: #c0c0c0;"></i><span id="location" class="fw-bold"></span></div>
+                    <span id="currentDate" style="color: #c0c0c0;" class="mt-2 mt-sm-auto"></span>               
+                </div>
+                <div class="Today_Weather position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <img src="" alt="weather_img" id="currentImage"/>
+                        <div class="d-flex flex-column align-items-end justify-content-end">
+                            <h1 class="fw-bolder m-0 fs-1"><span id="currentTemp"></span><span class='fs-1'> ْ </span>C</h1>
+                            <span id="currentDescriptionWeather"></span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <i class="fa-solid fa-droplet me-3"></i>
+                            <div>
+                                <p class="m-0 mb-1" style="color: #c0c0c0;">Humidity</p>
+                                <p class="m-0"><span id="currentHumidity"></span>%</p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center mt-3 mt-sm-auto">
+                            <i class="fa-solid fa-water me-3"></i>
+                            <div>
+                                <p class="m-0 mb-2" style="color: #c0c0c0;">Wind Speed</p>
+                                <p class="m-0"><span id="currendWindSpeed"></span> Km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hour">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="WeatherInHour"></div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper" style="margin-top: 165px;">
+                    <div class="swiper-wrapper" id="WeatherInTenDays"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Message" class="w-100 p-3 text-center position-absolute bottom-0 start-0"><i class="fa-solid fa-exclamation fw-bolder text-danger fs-1"></i> <span></span></section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
