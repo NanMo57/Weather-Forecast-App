@@ -141,7 +141,7 @@ window.onload = () => {
 
             GIS = true;
 
-        fetch(`https://api.weatherapi.com/v1/forecast.json?key=a04071e0c56c41748a6172511251302&q=${latitude},${longitude}&days=1git 0&aqi=yes`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=a04071e0c56c41748a6172511251302&q=${latitude},${longitude}&days=10&aqi=yes`)
                 .then(Response => Response.json())
                 .then(data => RenderData(data))
                 .catch(error => console.log(error));
