@@ -4,6 +4,7 @@ This project is a dynamic Weather Forecast App that provides real-time weather u
 The app is fully responsive, ensuring a seamless experience across mobile, tablet, and desktop devices. It also leverages NPM packages, including dayjs for date formatting and Swiper.js for smooth slide navigation.
 
 ✨ Features
+
 Real-Time Weather Updates – Fetches live weather data from WeatherAPI.
 10-Day Forecast – Displays an extended weather forecast, including temperature, humidity, and wind speed.
 Hourly Forecast – Shows upcoming hourly weather conditions with visual indicators.
