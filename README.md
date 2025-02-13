@@ -15,7 +15,7 @@ Fully Responsive – Works across mobile, tablet, and desktop devices.
 Built with NPM – Utilizes packages like dayjs and Swiper.js for enhanced functionality.
 Error Handling – Displays messages when GPS is disabled or an invalid location is entered.
 
-🔗 [Live Demo (if available)]
+🔗 [Live Demo (https://nanmo57.github.io/Weather-Forecast-App/)]
 
 📌 Contributions & suggestions are welcome! 🚀
 
